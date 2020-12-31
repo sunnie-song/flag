@@ -1,0 +1,7 @@
+{
+    "disableScroll": true,
+    "usingComponents": {
+        "i-toast": "../../ui/toast/index",
+        "sort":"/components/sort/sort"
+    }
+}

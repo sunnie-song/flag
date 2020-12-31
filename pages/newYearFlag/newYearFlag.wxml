@@ -1,0 +1,203 @@
+<view class="common-container">
+    <view id="content">
+          
+        <view id="main">
+            
+            <canvas canvasId="canvas" style="width:{{width}}rpx;height:{{height}}px;position:absolute;left:-750rpx;"></canvas>
+            <view id="intro" style="display: {{introShow?'block':'none'}}; opacity: 1;">
+             
+                <view class="intro_step" style="top:{{isIphoneX?'120rpx':''}}"></view>
+                <view class="intro_arrow" style="{{isIphoneX?'bottom:540rpx;animation:arrowX 1s ease infinite':''}}"></view>
+                <view class="intro_go" style="{{isIphoneX?'bottom:400rpx':''}}"></view>
+                <view class="intro_bottom"></view>
+                <view bindtap="introGoTap" class="intro_snow"></view>
+            </view>
+            <view id="select" style="display: {{selectShow?'block':'none'}}; opacity: 1;">
+             
+                <view class="select_main">
+             
+                    <view bindtap="openFoldClick" class="s_top {{topTipsShow?'animate':''}}" style="top: 18rpx;">
+                        <view class="top_num">{{tempFlagLists.length}}</view>
+                        <view class="top_select_text"></view>
+                        <view class="s_top_tips" style="display: {{topTipsShow?'block':'none'}}; transform-origin: 0px 0px 0px; opacity:1; transform: scale(1, 1);">
+                            <view class="s_top_tips_line"></view>
+                            <view class="s_top_tips_text"></view>
+                        </view>
+                        <view class="open_select"></view>
+                    </view>
+                    
+                    <view class="box" style="top: 200rpx;">
+                  
+                        <view bindtap="boxItemChosen" class="{{isIphoneX?'box-itemX':'box-item'}} {{item.isChosen?'chosen':''}}" data-index="{{index}}" wx:for="{{flagLists}}" wx:key="true">
+                            <view class="num">{{index+1}}</view>
+                            <view class="text" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                                <view style="opacity: 1;">{{item.text}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="hand_box {{handShow?'hand_ani':''}}" style="top: 272rpx;">
+                        <view class="hand"></view>
+                        <view class="hand_text"></view>
+                    </view>
+                    <view bindtap="changeRandomTap" class="change">
+                        <view class="change_bg"></view>
+                        <view animation="{{changeRotateData}}" class="change_rotate"></view>
+                        <view class="change_text"></view>
+                    </view>
+                    <view wx:if="{{!auth}}" class="input_box">
+                        <view class="placeholder" wx:if="{{placeholderShow}}">
+                            <view class="left_line"></view>
+                        </view>
+                        <input value="{{inputFlagValue}}" focus="{{ inputFocus }}" bindblur="inputFlagBlur" bindfocus="inputFlagFocus" bindinput="inputFlag" cursorSpacing="70" id="input" maxlength="50"></input>
+                        <view class="right_line"></view>
+                        <view bindtap="okTap" class="ok" wx:if="{{!placeholderShow}}"></view>
+                    </view>
+                    <view bindtap="nextTap" class="next"></view>
+                </view>
+           
+                <view class="fold_click_box {{foldShow?'come_front':''}}">
+                  
+                    <view bindtap="closeFoldClick" class="fold_click_bg"></view>
+                    <!--  animation="{{foldAnimationData}}" -->
+                    <view  class="fold_box" style="top: 57rpx;{{isIphoneX?'height:1100rpx':''}}">
+                        <view bindtap="closeFoldClick" class="close_fold"></view>
+                        <view class="fold_intro">(长按拖动，调整顺序)</view>
+                        <view class="fold_main_padding_box" style="{{isIphoneX?'max-height:900rpx':''}}">
+                            <view class="fold_main_box">
+                                <scroll-view scrollY class="fold_main" style="{{isIphoneX?'height:900rpx':''}}">
+                                   <sort list="{{tempFlagLists}}" bind:text="handleText" bind:change="handleReset"></sort>
+                                    <!-- <movable-area style="{{tempFlagLists.length>1?'height:'+(tempFlagLists.length-1)*50+'px':''}}">
+                                        <view class="fold_main_item"> 
+                                            <view class="li_index">{{index+1}}.</view>
+                                            <view class="li_main">
+                                                <view class="li_text">{{item}}</view>
+                                                <view bindtap="deleteFlag" class="li_delete" data-index="{{index}}"></view>
+                                            </view>
+                                        </view>
+                                    <movable-view animation="{{false}}" bindchange="flagSortChange" bindtouchend="flagTouchEnd" class="fold_main_item {{currentIndex==index?'choosen':''}}" damping="500" friction="10" data-index="{{index}}" data-y="{{index*45}}" direction="vertical" y="{{index*45}}" wx:for="{{tempFlagLists}}" wx:key="true">
+                                            <view class="li_index">{{index+1}}.</view>
+                                            <view class="li_main">
+                                                <view class="li_text">{{item}}</view>
+                                                <view bindtap="deleteFlag" class="li_delete" data-index="{{index}}"></view>
+                                            </view>
+                                        </movable-view> 
+                                    </movable-area> -->
+                                </scroll-view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="intro_snow"></view>
+            </view>
+            <view class="show" id="settings" style="display: {{settingsShow?'block':'none'}}; transform-origin: 0px 0px 0px; transform: scale(1, 1); opacity: 1; background-color: {{settingsBgColor}};">
+                <view class="top_tips" style="top: 30rpx; display: {{topTipsShow?'block':'none'}}; opacity: 1;"></view>
+                <view class="step3_tips" style="top: 30rpx; display: {{step3TipsShow?'block':'none'}}; opacity: 1;"></view>
+                <view class="settings_main" style=" {{isIphoneX?'height: 1257rpx':''}}">
+                    <view class="step3 {{step3TipsShow?'show_step3':''}}">
+                        <view class="step3_text">
+                            <view class=""></view>
+                        </view>
+                        <view bindtap="readCheckTap" class="read {{readCheck?'check':''}} {{readAniShow?'read_ani':''}}">
+                            <view class="read_circle"></view>
+                            <view class="read_text">我已经认真阅读以上意见，请2021放心，新的一年我会继续加油！</view>
+                        </view>
+                        <view class="name_box">
+                            <!-- <view class="name_placeholder" wx:if="{{placeholderShow}}">
+                                <view class="name_left_line"></view>
+                            </view> -->
+                            <input placeholder="准备好了，就在此署名吧" bindblur="inputNameBlur" bindfocus="inputNameFocus" bindinput="inputName" cursorSpacing="80" id="name" maxlength="8" type="text"></input>
+                            <!-- <view class="name_mask"></view> -->
+                        </view>
+                        <view bindtap="confirmTap" class="confirm"></view>
+                    </view>
+                    <view class="step2" style="display: {{step2Show?'block':'none'}};">
+                        <view class="top_title"></view>
+                        <view class="img_box">
+                            <view class="img_bg"></view>
+                            <view class="img" style="background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/{{imgListsIndex}});"></view>
+                        </view>
+                        <view class="text_box">
+                            <view class="text_scroll_box">
+                                <scroll-view scrollY class="text_scroll_box_ul" style="{{isIphoneX?'height:480rpx;':''}}">
+                                    <view class="text_scroll_box_li" wx:for="{{tempFlagLists}}" wx:key="true">
+                                        <view class="li_number {{index+1<10?'single':'ten'}}>">
+                                            <view class="number_bg" style="background-color: {{settingsBgColor}};"></view>
+                                            <view class="number_line"></view>
+                                            <view class="number l{{index+1}}" wx:if="{{index+1<10}}"></view>
+                                            <block wx:else>
+                                                <view class="number l{{(index+1-(index+1)%10)/10}}"></view>
+                                                <view class="number l{{(index+1)%10}}"></view>
+                                            </block>
+                                        </view>
+                                        <view class="li_text">{{item.text}}</view>
+                                    </view>
+                                </scroll-view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="bottom_settings" style="display: {{step2Show?'block':'none'}};">
+                    <view class="choose_main">
+                        <view class="colors_box" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                            <view class="colors_main">
+                                <view class="colors_main_ul">
+                                    <view bindtap="colorChooseTap" class="colors_main_li {{colorListsIndex==index?'chosen':''}}" data-color="{{item}}" data-index="{{index}}" wx:for="{{colorLists}}" wx:key="true"></view>
+                                </view>
+                            </view>
+                            <!-- <view class="colors_split">
+                                <view class="outline">
+                                    <view class="splits c{{colorListsIndex}}">
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                        <view class="split"></view>
+                                    </view>
+                                </view>
+                                <view bindtouchmove="handleTouchMove" class="ruler ruler_ani" style="left:{{colorX}}px"></view>
+                            </view> -->
+                        </view>
+                        <view class="choose_img_box" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: {{chooseActive=='img'?'block':''}};">
+                            <view class="img_list">
+                                <view bindtap="imgChooseTap" class="img_list_li" data-img="{{item}}" wx:for="{{imgLists}}" wx:key="true"></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="choose_list">
+                        <view bindtap="chooseTap" class="choose_list_item color_choose {{chooseActive=='color'?'active':''}}" data-choose="color"></view>
+                        <view bindtap="chooseTap" class="choose_list_item img_choose {{chooseActive=='img'?'active':''}}" data-choose="img"></view>
+                    </view>
+                    <view bindtap="returnTap" class="return"></view>
+                    <view bindtap="continueTap" class="continue" style="display: {{continueShow?'block':'none'}};"></view>
+                    <view bindtap="gotoSignTap" class="goto_sign" style="display: {{gotoSignShow?'block':'none'}}; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);"></view>
+                </view>
+                <view class="count_down" style="display: {{countDownShow?'block':'none'}};opacity: 1;">
+                    <view class="count_box">
+                        <view class="circle1" style="display: {{circle1Show?'block':'none'}}"></view>
+                        <view class="circle2" style="display: {{circle2Show?'block':'none'}}"></view>
+                        <view class="circle3" style="display: {{circle3Show?'block':'none'}}"></view>
+                        <view class="count_num1 {{num1Show?'num_show':'num_hide'}}"></view>
+                        <view class="count_num2 {{num2Show?'num_show':'num_hide'}}"></view>
+                        <view class="count_num3 {{num3Show?'num_show':'num_hide'}}"></view>
+                        <view class="bar {{barAniShow?'bar_ani':''}}">
+                            <view class="bar_line"></view>
+                            <view class="top_circle"></view>
+                        </view>
+                    </view>
+                    <view class="circles_box"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view  animation="{{starAnimationData}}" class="star" style="left:{{left}}px;top:{{top}}px;"></view>
+<view class="result" style=" display: {{resultShow?'block':'none'}};">
+    <view class="bottom_show">
+        <image bindlongpress="resultFlagImgTap" bindtap="_showActionSheet" data-path="{{resultFlagImg}}" mode="aspectFit" src="{{resultFlagImg}}" style="width:{{width}}rpx;height:{{height}}px;"></image>
+    </view>
+    <view bindtap="_showActionSheet" class="firework"></view>
+</view>
+<i-toast id="toast"></i-toast>

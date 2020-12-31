@@ -1,0 +1,31 @@
+Component({
+    externalClasses: [ "i-class" ],
+    properties: {
+        name: {
+            type: String,
+            value: ""
+        }
+    },
+    relations: {
+        "../index/index": {
+            type: "parent"
+        }
+    },
+    data: {
+        top: 0,
+        height: 0,
+        currentName: ""
+    },
+    methods: {
+        updateDataChange: function() {
+            var e = this;
+            wx.createSelectorQuery().in(this).select(".i-index-item").boundingClientRect(function(t) {
+                e.setData({
+                    top: t.top,
+                    height: t.height,
+                    currentName: e.data.name
+                });
+            }).exec();
+        }
+    }
+});

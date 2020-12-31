@@ -1,0 +1,21 @@
+Component({
+    externalClasses: [ "i-class" ],
+    properties: {
+        size: {
+            type: String,
+            value: "default"
+        },
+        fix: {
+            type: Boolean,
+            value: !1
+        },
+        fullscreen: {
+            type: Boolean,
+            value: !1
+        },
+        custom: {
+            type: Boolean,
+            value: !1
+        }
+    }
+});

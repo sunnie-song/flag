@@ -1,0 +1,88 @@
+ 
+
+ .movable {
+  height: 100%;
+  width: 644rpx;
+}
+
+ .movable__view {
+  width: 644rpx;
+  height: 54rpx;
+  border-radius: 2rpx;
+  overflow: hidden;
+}
+
+ .movable__view.active  .fold_main_item .li_main {
+  box-shadow: 0 6rpx 20rpx 0 rgba(0, 0, 0, 0.70);
+}
+
+ .movable__view.zIndex {
+  z-index: 1;
+}
+
+ 
+
+
+
+ .fold_main_item {
+  transition: all linear .2s;
+  font-size: 32rpx;
+}
+
+ .fold_main_item .li_index {
+  width: 64rpx;
+  padding-top: 11rpx;
+  position: absolute;
+  text-align: right;
+  transition: all linear .1s;
+}
+
+ .fold_main_item .li_main {
+  width: 496rpx;
+  border: 1rpx solid #101010;
+  line-height: 40rpx;
+  margin-left: 75rpx;
+  padding-top: 6rpx;
+  padding-bottom: 6rpx;
+  position: relative;
+  transform: scale(1);
+  transition: all linear .1s;
+}
+
+ .fold_main_item .li_main .li_text {
+  width: 420rpx;
+  margin-left: 26rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ .fold_main_item .li_main .li_delete {
+  transition: all linear .1s;
+  width: 47rpx;
+  height: 47rpx;
+  background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/delete.png) center center no-repeat;
+  background-size: 19rpx 19rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ .fold_main_item.choosen {
+  -webkit-transition: none;
+  z-index: 100;
+}
+
+ .fold_main_item.choosen .li_index {
+  color: #ff4b30;
+}
+
+ .fold_main_item.choosen .li_main {
+  background: #ff4b30;
+  -webkit-transform: scale(1.04);
+  border: none;
+  color: #ececec;
+}
+
+ .fold_main_item.choosen .li_main .li_delete {
+  display: none;
+}

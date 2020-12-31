@@ -1,0 +1,2320 @@
+#content,.common-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 100%;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+#intro {
+    width: 750rpx;
+    height: 1334rpx;
+    background: #ececec;
+}
+
+#intro .intro_snow {
+    width: 750rpx;
+    height: 1334rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+    background-size: 750rpx 1334rpx;
+    animation: snow 1.5s ease 0.2s infinite;
+    position: absolute;
+    z-index: 100;
+}
+
+#intro .intro_step {
+    width: 650rpx;
+    height: 671rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/bg1.png) no-repeat;
+    background-size: 600rpx 619rpx;
+    top: 60rpx;
+    right: -20rpx;
+    position: absolute;
+}
+
+#intro .intro_arrow {
+    width: 24rpx;
+    height: 12rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/triangle.png);
+    background-size: 24rpx 12rpx;
+    bottom: 440rpx;
+    right: 50%;
+    margin-right: -12rpx;
+    position: absolute;
+    animation: arrow 1s ease infinite;
+}
+
+#intro .intro_go {
+    width: 300rpx;
+    height: 90rpx;
+    border: 2rpx solid #FF4B30;
+    border-left-width: 10rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/go.png) no-repeat center;
+    background-size: 148rpx 39rpx;
+    bottom: 300rpx;
+    right: 50%;
+    margin-right: -150rpx;
+    position: absolute;
+    z-index: 10;
+}
+
+#intro .intro_bottom {
+    width: 750rpx;
+    height: 400rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/bottom_bg.jpg);
+    background-size: 750rpx 400rpx;
+    bottom: -40rpx;
+    position: absolute;
+    z-index: 1;
+}
+
+#select,#select .fold_click_bg,#select .fold_click_box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+#select {
+    background: #ececec;
+}
+
+#select .intro_snow {
+    width: 750rpx;
+    height: 1334rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+    background-size: 750rpx 1334rpx;
+    animation: snow 1.5s ease 0.2s infinite;
+    position: absolute;
+    z-index: 9;
+}
+
+#select .fold_click_box {
+    z-index: -10;
+}
+
+#select .fold_box {
+    /* transform: scale(0); */
+    z-index: 100;
+    background: #ececec;
+    width: 642rpx;
+    height: 850rpx;
+    border: 1rpx solid #101010;
+    position: absolute;
+    top: 180rpx;
+    left: 54rpx;
+    transform-origin: 0 0;
+}
+
+#select .fold_box .close_fold {
+    width: 153rpx;
+    height: 49rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/close_fold.png);
+    background-position: bottom;
+    background-size: 153rpx 49rpx;
+    position: absolute;
+    top: 22rpx;
+}
+
+#select .fold_box .fold_intro {
+    position: absolute;
+    top: 22rpx;
+    left: 292rpx;
+    font-size: 30rpx;
+    font-weight: 300;
+    color:#949494;
+}
+
+#select .fold_box .fold_main_padding_box {
+    margin-top: 90rpx;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 710rpx;
+    padding: 20rpx 0 40rpx;
+    overflow: hidden;
+}
+
+#select .fold_box .fold_main_box {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#select .fold_box .fold_main_box .fold_main {
+    height: 710rpx;
+    position: relative;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item {
+    /* background: #ddd; */
+    height: 40rpx;
+    /* width: 300rpx; */
+    transition: all linear .2s;
+    font-size: 32rpx;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item .li_index {
+    width: 64rpx;
+    padding-top: 11rpx;
+    position: absolute;
+    text-align: right;
+    transition: all linear .1s;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item .li_main {
+    width: 496rpx;
+    border: 1rpx solid #101010;
+    line-height: 40rpx;
+    margin-left: 75rpx;
+    padding-top: 6rpx;
+    padding-bottom: 6rpx;
+    position: relative;
+    transform: scale(1);
+    transition: all linear .1s;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item .li_main .li_text {
+    width: 420rpx;
+    margin-left: 26rpx;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item .li_main .li_delete {
+    transition: all linear .1s;
+    width: 47rpx;
+    height: 47rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/delete.png) center center no-repeat;
+    background-size: 19rpx 19rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item.choosen {
+    -webkit-transition: none;
+    z-index: 100;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item.choosen .li_index {
+    color: #ff4b30;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item.choosen .li_main {
+    background: #ff4b30;
+    -webkit-transform: scale(1.04);
+    border: none;
+    color: #ececec;
+}
+
+#select .fold_box .fold_main_box .fold_main .fold_main_item.choosen .li_main .li_delete {
+    display: none;
+}
+
+#select .fold_click_box.come_front {
+    z-index: 100;
+}
+
+#select .fold_box.come_front {
+    transform: scale(0);
+    z-index: 100;
+}
+
+#select .fold_box.add_transform {
+    transition: all linear .2s;
+}
+
+#select .fold_box.come_front.open_fold {
+    transform: scale(1);
+}
+
+#select .select_main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+#select .select_main .s_top {
+    width: 642rpx;
+    height: 84rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/top_bg2.png);
+    background-size: 642rpx 84rpx;
+    position: absolute;
+    top: 139rpx;
+    left: 54rpx;
+}
+
+#select .select_main .s_top .top_num {
+    font-size: 30rpx;
+    line-height: 30rpx;
+    color: #000;
+    margin: 9rpx 0 0 40rpx;
+}
+
+#select .select_main .s_top .open_select {
+    width: 100rpx;
+    height: 81rpx;
+    position: absolute;
+    top: 0;
+}
+
+#select .select_main .s_top .top_select_text {
+    width: 91rpx;
+    height: 28rpx;
+    position: absolute;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/top_select_text.png);
+    background-size: 91rpx 28rpx;
+    top: 52rpx;
+    left: 2rpx;
+}
+
+#select .select_main .s_top .s_top_tips {
+    display: none;
+    position: absolute;
+    left: 5rpx;
+    top: 90rpx;
+}
+
+#select .select_main .s_top .s_top_tips .s_top_tips_line {
+    width: 22rpx;
+    height: 38rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/tips_line.png);
+    background-size: 22rpx 38rpx;
+    position: absolute;
+    top: 0;
+}
+
+#select .select_main .s_top .s_top_tips .s_top_tips_text {
+    width: 260rpx;
+    height: 32rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/tips_text.png);
+    background-size: 260rpx 32rpx;
+    position: absolute;
+    top: 18rpx;
+    left: 26rpx;
+}
+
+#select .select_main .s_top.animate .s_top_tips .s_top_tips_text,#select .select_main .s_top.animate .top_select_text {
+    -webkit-animation: s 1s ease infinite;
+}
+
+#select .select_main .box {
+    width: 100%;
+    position: absolute;
+    top: 368rpx;
+    left: 85rpx;
+}
+
+#select .select_main .box .box-item {
+    width: 260rpx;
+    position: absolute;
+    -webkit-perspective: 1000;
+}
+
+#select .select_main .box .box-item .text {
+    font-family: 'FZYaSongS-L-GB';
+    position: absolute;
+    top: 0;
+    -webkit-transition: all ease .5s;
+    font-size: 35rpx;
+    color: #ff4b30;
+    height: 43rpx;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#select .select_main .box .box-item .num {
+    font-size: 30rpx;
+    color: #000;
+    width: 32rpx;
+    height: 36rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/unchosen.png) right bottom no-repeat;
+    background-size: 20rpx 16rpx;
+}
+
+#select .select_main .box .box-item.chosen .num {
+    font-size: 0;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/chosen.png);
+    background-size: 32rpx 36rpx;
+}
+
+.star {
+    width: 75rpx;
+    height: 79rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/star.png);
+    background-size: 75rpx 79rpx;
+    position: absolute;
+    opacity: 0;
+}
+
+#select .select_main .box .box-item:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+#select .select_main .box .box-item:nth-child(2) {
+    top: 0;
+    left: 320rpx;
+}
+
+#select .select_main .box .box-item:nth-child(3) {
+    top: 172rpx;
+    left: 0;
+}
+
+#select .select_main .box .box-item:nth-child(4) {
+    top: 172rpx;
+    left: 320rpx;
+}
+
+#select .select_main .box .box-item:nth-child(5) {
+    top: 344rpx;
+    left: 0;
+}
+
+#select .select_main .box .box-item:nth-child(6) {
+    top: 344rpx;
+    left: 320rpx;
+}
+
+#select .select_main .box .box-itemX {
+    width: 260rpx;
+    position: absolute;
+    -webkit-perspective: 1000;
+}
+
+#select .select_main .box .box-itemX .text {
+    font-family: 'FZYaSongS-L-GB';
+    position: absolute;
+    top: 0;
+    -webkit-transition: all ease .5s;
+    font-size: 35rpx;
+    color: #ff4b30;
+    height: 43rpx;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#select .select_main .box .box-itemX .num {
+    font-size: 30rpx;
+    color: #000;
+    width: 32rpx;
+    height: 36rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/unchosen.png) right bottom no-repeat;
+    background-size: 20rpx 16rpx;
+}
+
+#select .select_main .box .box-itemX.chosen .num {
+    font-size: 0;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/chosen.png);
+    background-size: 32rpx 36rpx;
+}
+
+#select .select_main .box .box-itemX:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+#select .select_main .box .box-itemX:nth-child(2) {
+    top: 0;
+    left: 320rpx;
+}
+
+#select .select_main .box .box-itemX:nth-child(3) {
+    top: 272rpx;
+    left: 0;
+}
+
+#select .select_main .box .box-itemX:nth-child(4) {
+    top: 272rpx;
+    left: 320rpx;
+}
+
+#select .select_main .box .box-itemX:nth-child(5) {
+    top: 544rpx;
+    left: 0;
+}
+
+#select .select_main .box .box-itemX:nth-child(6) {
+    top: 544rpx;
+    left: 320rpx;
+}
+
+#select .select_main .hand_box {
+    position: absolute;
+    top: 433rpx;
+    left: 152rpx;
+}
+
+#select .select_main .hand_box .hand {
+    opacity: 0;
+    position: absolute;
+    top: 9rpx;
+    left: 10rpx;
+    width: 30rpx;
+    height: 35rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/hand.png);
+    background-size: 30rpx 35rpx;
+}
+
+#select .select_main .hand_box .hand_text {
+    width: 156rpx;
+    height: 32rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/hand_text1.png);
+    background-size: 156rpx 32rpx;
+    position: absolute;
+    top: 16rpx;
+    left: 45rpx;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+#select .select_main .hand_box.hand_ani .hand {
+    animation: s 1.5s ease infinite;
+}
+
+#select .select_main .hand_box.hand_ani .hand_text {
+    opacity: 1;
+}
+
+#select .select_main .change {
+    position: absolute;
+    z-index: 100;
+    width: 135rpx;
+    height: 135rpx;
+    bottom: 310rpx;
+    left: 308rpx;
+}
+
+#select .select_main .change .change_bg {
+    width: 135rpx;
+    height: 135rpx;
+    border: 1rpx solid #ff4b30;
+    position: absolute;
+    top: 0;
+}
+
+#select .select_main .change .change_rotate {
+    width: 136rpx;
+    height: 136rpx;
+    background: #ff4b30;
+    position: absolute;
+    top: 0;
+    transition: all 1s;
+}
+
+#select .select_main .change .change_rotate.changeRotate_ani {
+    animation: changeRotate 0.5s linear;
+}
+
+#select .select_main .change .change_text {
+    width: 135rpx;
+    height: 31rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/change_text1.png) no-repeat;
+    background-size: 135rpx 31rpx;
+    position: absolute;
+    top: 52rpx;
+    z-index: 2;
+}
+
+#select .select_main .change.forbidden .change_bg {
+    border: 1rpx solid #797979;
+}
+
+#select .select_main .change.forbidden .change_rotate {
+    background: #797979;
+}
+
+#select .select_main .input_box {
+    position: absolute;
+    width: 642rpx;
+    height: 75rpx;
+    bottom: 180rpx;
+    left: 54rpx;
+    border: 2rpx solid #000;
+}
+
+#select .select_main .input_box .placeholder {
+    width: 642rpx;
+    height: 75rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/placeholder3.png);
+    background-size: 642rpx 75rpx;
+}
+
+#select .select_main .input_box .placeholder .left_line {
+    width: 2rpx;
+    height: 46rpx;
+    background: #000;
+    position: absolute;
+    top: 13rpx;
+    left: 14rpx;
+    animation: s .5s ease infinite;
+}
+
+#select .select_main .input_box #input {
+    width: 563rpx;
+    height: 71rpx;
+    outline: 0;
+    border: none;
+    position: absolute;
+    top: 5rpx;
+    color: #ff4b30;
+    background: 0 0;
+    padding: 0 13rpx;
+    font-size: 36rpx;
+    line-height: 71rpx;
+}
+
+#select .select_main .input_box .right_line {
+    width: 2rpx;
+    height: 71rpx;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 74rpx;
+}
+
+#select .select_main .input_box .ok {
+    width: 75rpx;
+    height: 71rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/ok1.png) center center no-repeat;
+    background-size: 49rpx 27rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#select .select_main .next {
+    width: 145rpx;
+    height: 48rpx;
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/next1.png);
+    background-size: 145rpx 48rpx;
+    position: absolute;
+    bottom: 82rpx;
+    right: 54rpx;
+}
+
+@-webkit-keyframes s {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes s {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrow {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        bottom: 420rpx;
+    }
+}
+
+@keyframes arrow {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        bottom: 420rpx;
+    }
+}
+
+@-webkit-keyframes arrowX {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        bottom: 520rpx;
+    }
+}
+
+@keyframes arrowX {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        bottom: 520rpx;
+    }
+}
+
+@-webkit-keyframes read {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes read {
+    0%,to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ruler {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-141rpx,0,0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(59rpx,0,0);
+    }
+}
+
+@keyframes ruler {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-141rpx,0,0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(59rpx,0,0);
+    }
+}
+
+@-webkit-keyframes bar {
+    0%,to {
+        height: 0rpx;
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        height: 228rpx;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes bar {
+    0%,to {
+        height: 0rpx;
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        height: 228rpx;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes changeRotate {
+    0%,to {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes changeRotate {
+    0%,to {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes snow {
+    0% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+    }
+
+    5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/2.png);
+    }
+
+    10% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/3.png);
+    }
+
+    15% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/4.png);
+    }
+
+    20% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/5.png);
+    }
+
+    25% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/6.png);
+    }
+
+    30% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/7.png);
+    }
+
+    35% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/8.png);
+    }
+
+    40% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/9.png);
+    }
+
+    45% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/10.png);
+    }
+
+    50% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/11.png);
+    }
+
+    55% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/12.png);
+    }
+
+    60% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/13.png);
+    }
+
+    65% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/14.png);
+    }
+
+    70% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/15.png);
+    }
+
+    75% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/16.png);
+    }
+
+    80% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/17.png);
+    }
+
+    85% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/18.png);
+    }
+
+    90% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/19.png);
+    }
+
+    95% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/20.png);
+    }
+}
+
+@keyframes snow {
+    0% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+    }
+
+    5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/2.png);
+    }
+
+    10% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/3.png);
+    }
+
+    15% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/4.png);
+    }
+
+    20% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/5.png);
+    }
+
+    25% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/6.png);
+    }
+
+    30% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/7.png);
+    }
+
+    35% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/8.png);
+    }
+
+    40% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/9.png);
+    }
+
+    45% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/10.png);
+    }
+
+    50% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/11.png);
+    }
+
+    55% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/12.png);
+    }
+
+    60% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/13.png);
+    }
+
+    65% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/14.png);
+    }
+
+    70% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/15.png);
+    }
+
+    75% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/16.png);
+    }
+
+    80% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/17.png);
+    }
+
+    85% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/18.png);
+    }
+
+    90% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/19.png);
+    }
+
+    95% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/20.png);
+    }
+}
+
+@-webkit-keyframes firework {
+    0% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/1.png);
+    }
+
+    2.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/2.png);
+    }
+
+    5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/3.png);
+    }
+
+    5.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/4.png);
+    }
+
+    7.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/5.png);
+    }
+
+    10% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/6.png);
+    }
+
+    12.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/7.png);
+    }
+
+    15% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/8.png);
+    }
+
+    17.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/9.png);
+    }
+
+    20% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/10.png);
+    }
+
+    22.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/11.png);
+    }
+
+    25% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/12.png);
+    }
+
+    27.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/13.png);
+    }
+
+    30% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/14.png);
+    }
+
+    32.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/15.png);
+    }
+
+    35% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/16.png);
+    }
+
+    37.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/17.png);
+    }
+
+    40% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/18.png);
+    }
+
+    42.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/19.png);
+    }
+
+    45% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/20.png);
+    }
+
+    47.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/21.png);
+    }
+
+    50% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/22.png);
+    }
+
+    52.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/23.png);
+    }
+
+    55% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/24.png);
+    }
+
+    57.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/25.png);
+    }
+
+    60% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/26.png);
+    }
+
+    62.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/27.png);
+    }
+
+    65% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/28.png);
+    }
+
+    67.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/29.png);
+    }
+
+    70% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/30.png);
+    }
+
+    72.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/31.png);
+    }
+
+    75% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/32.png);
+    }
+
+    77.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/33.png);
+    }
+
+    80% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/34.png);
+    }
+
+    82.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+    }
+
+    85% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+    }
+
+    87.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+    }
+
+    90% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+    }
+
+    92.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+    }
+
+    95% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+    }
+
+    97.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/37.png);
+    }
+
+    100% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/38.png);
+    }
+}
+
+@keyframes firework {
+    0% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/1.png);
+    }
+
+    2.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/2.png);
+    }
+
+    5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/3.png);
+    }
+
+    5.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/4.png);
+    }
+
+    7.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/5.png);
+    }
+
+    10% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/6.png);
+    }
+
+    12.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/7.png);
+    }
+
+    15% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/8.png);
+    }
+
+    17.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/9.png);
+    }
+
+    20% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/10.png);
+    }
+
+    22.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/11.png);
+    }
+
+    25% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/12.png);
+    }
+
+    27.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/13.png);
+    }
+
+    30% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/14.png);
+    }
+
+    32.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/15.png);
+    }
+
+    35% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/16.png);
+    }
+
+    37.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/17.png);
+    }
+
+    40% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/18.png);
+    }
+
+    42.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/19.png);
+    }
+
+    45% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/20.png);
+    }
+
+    47.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/21.png);
+    }
+
+    50% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/22.png);
+    }
+
+    52.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/23.png);
+    }
+
+    55% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/24.png);
+    }
+
+    57.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/25.png);
+    }
+
+    60% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/26.png);
+    }
+
+    62.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/27.png);
+    }
+
+    65% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/28.png);
+    }
+
+    67.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/29.png);
+    }
+
+    70% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/30.png);
+    }
+
+    72.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/31.png);
+    }
+
+    75% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/32.png);
+    }
+
+    77.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/33.png);
+    }
+
+    80% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/34.png);
+    }
+
+    82.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+    }
+
+    85% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+    }
+
+    87.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+    }
+
+    90% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+    }
+
+    92.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+    }
+
+    95% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+    }
+
+    97.5% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/37.png);
+    }
+
+    100% {
+        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/38.png);
+    }
+}
+
+#settings {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ff4b30;
+    top: 0;
+    display: none;
+    z-index: 11;
+    transition: background .15s linear;
+}
+
+#settings .settings_main {
+    width: 616rpx;
+    height: 1057rpx;
+    position: absolute;
+    top: 100rpx;
+    left: 67rpx;
+    transition: all linear .3s;
+}
+
+#settings .settings_main .top_title {
+    width: 422rpx;
+    height: 182rpx;
+    background-image: url(https://www.sunniejs.cn/static/flag/top_title1.png);
+    background-size: 422rpx 182rpx;
+    position: absolute;
+    top: 80rpx;
+    left: 97rpx;
+}
+
+#settings .settings_main .img_box {
+    width: 100%;
+    height: 194rpx;
+    position: absolute;
+    top: 284rpx;
+}
+
+#settings .settings_main .img_box .img_bg {
+    width: 100%;
+    height: 100%;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img_bg.png) center center no-repeat;
+    background-size: 242rpx 164rpx;
+    position: absolute;
+    top: 0;
+}
+
+#settings .settings_main .img_box .img {
+    width: 100%;
+    height: 100%;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img1.png) center center no-repeat;
+    background-size: 242rpx 164rpx;
+    position: absolute;
+    top: 0;
+}
+
+#settings .settings_main .text_box {
+    width: 528rpx;
+    height: 507rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/end/top_line.png) 18rpx 0 no-repeat,url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/end/bottom_line.png) 27rpx bottom no-repeat;
+    background-size: 517rpx 9rpx;
+    position: absolute;
+    top: 470rpx;
+    left: 38rpx;
+    overflow: hidden;
+    padding: 26rpx 0;
+    min-height: 312rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 10rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul {
+    height: 300rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li {
+    position: relative;
+    margin-top: 24rpx;
+    min-height: 72rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number {
+    width: 70rpx;
+    height: 37rpx;
+    float: left;
+    position: relative;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number_bg {
+    width: 69rpx;
+    height: 14rpx;
+    background-color: #ff4b30;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: background .15s linear;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number {
+    width: 18rpx;
+    height: 27rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-0.png) center bottom no-repeat;
+    background-size: 11rpx 24rpx;
+    position: absolute;
+    top: 0;
+    left: 8rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l0 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-0.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l1 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-1.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l2 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-2.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l3 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-3.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l4 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-4.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l5 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-5.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l6 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-6.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l7 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-7.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l8 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-8.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l9 {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-9.png);
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.single .number_line {
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/single_bg.png) no-repeat;
+    background-size: 43rpx 19rpx;
+    width: 43rpx;
+    height: 19rpx;
+    position: absolute;
+    top: 10rpx;
+    right: 0;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.ten .number_line {
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/ten_bg.png) no-repeat;
+    background-size: 27rpx 19rpx;
+    width: 27rpx;
+    height: 19rpx;
+    position: absolute;
+    top: 10rpx;
+    right: 0;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.hundred .number:nth-child(4),#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.ten .number:nth-child(4) {
+    left: 26rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.hundred .number:nth-child(5) {
+    left: 44rpx;
+}
+
+#settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_text {
+    width: 440rpx;
+    font-size: 30rpx;
+    color: #000;
+    margin-left: 88rpx;
+}
+
+#settings .step2,#settings .step3 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: all linear .3s;
+    position: absolute;
+}
+
+#settings .step2 {
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/bg1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#settings .step2.go_down {
+    transform: translate3d(0,300rpx,0);
+}
+
+#settings .step2.fade.go_down {
+    opacity: 0;
+    transform: translate3d(0,600rpx,0);
+}
+
+#settings .step3.show_step3 {
+    opacity: 1;
+}
+
+#settings .step3 {
+    opacity: 0;
+    overflow: hidden;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/bg2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#settings .step3 .step3_text {
+    width: 526rpx;
+    height: 587rpx;
+    background: url(https://www.sunniejs.cn/static/flag/step3_text1.png) no-repeat;
+    background-size: 526rpx 587rpx;
+    position: absolute;
+    top: 82rpx;
+    left: 45rpx;
+}
+
+#settings .step3 .read {
+    position: absolute;
+    bottom: 310rpx;
+}
+
+#settings .step3 .read .read_circle {
+    width: 29rpx;
+    height: 29rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/read_unclick.png) no-repeat;
+    background-size: 29rpx 29rpx;
+    position: absolute;
+    left: 36rpx;
+}
+
+#settings .step3 .read .read_text {
+    width: 497rpx;
+    position: absolute;
+    left: 86rpx;
+    top: 2rpx;
+    font-size: 24rpx;
+    color:#ff4b30;
+    line-height: 28rpx;
+}
+
+#settings .step3 .read.check .read_circle {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/read_click.png);
+}
+
+#settings .step3 .read.read_ani {
+    animation: read 1s ease infinite;
+}
+
+#settings .step3 .name_box {
+    position: absolute;
+    bottom: 128rpx;
+    left: 37rpx;
+    width: 360rpx;
+    height: 75rpx;
+}
+
+#settings .step3 .name_box .name_placeholder {
+    position: absolute;
+    top: 0;
+    width: 360rpx;
+    height: 75rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/name_placeholder1.png) 28rpx center no-repeat;
+    background-size: 313rpx 28rpx;
+    z-index: -1;
+}
+
+#settings .step3 .name_box .name_placeholder .name_left_line {
+    width: 2rpx;
+    height: 47rpx;
+    background: #a0a0a0;
+    position: absolute;
+    top: 13rpx;
+    left: 14rpx;
+    animation: s .5s ease infinite;
+}
+
+#settings .step3 .name_box #name,#settings .step3 .name_box .name_mask {
+    width: 360rpx;
+    height: 75rpx;
+    top: 0;
+    position: absolute;
+    
+}
+
+#settings .step3 .name_box #name {
+    outline: 0;
+    border: 2rpx solid #000;
+    color: #000;
+    padding: 0 13rpx;
+    background: 0 0;
+    font-size: 28rpx;
+    line-height: 75rpx;
+   
+}
+
+#settings .step3 .confirm {
+    width: 103rpx;
+    height: 48rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/confirm1.png) no-repeat;
+    background-size: 103rpx 48rpx;
+    position: absolute;
+    bottom: 68rpx;
+    right: 18rpx;
+}
+
+#settings .step3_tips,#settings .top_tips {
+    top: 67rpx;
+    right: 66rpx;
+    position: absolute;
+    display: none;
+}
+
+#settings .top_tips {
+    width: 430rpx;
+    height: 46rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/top_tips.png) no-repeat;
+    background-size: 430rpx 46rpx;
+}
+
+#settings .step3_tips {
+    width: 370rpx;
+    height: 43rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/step3_tips1.png) no-repeat;
+    background-size: 370rpx 43rpx;
+}
+
+#settings .bottom_settings {
+    width: 100%;
+    height: 342rpx;
+    background: #ececec;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: all linear .5s;
+}
+
+#settings .bottom_settings .choose_list {
+    width: 100%;
+    height: 78rpx;
+    top: 0;
+    position: absolute;
+    border-top: 1rpx solid #d8d5d5;
+}
+
+#settings .bottom_settings .choose_list .choose_list_item {
+    width: 375rpx;
+    height: 78rpx;
+    position: absolute;
+    top: 0;
+    border-bottom: 2rpx solid #ececec;
+    -webkit-transition: all linear .15s;
+}
+
+#settings .bottom_settings .choose_list .choose_list_item.active {
+    border-bottom: 2rpx solid #ff4b30;
+}
+
+#settings .bottom_settings .choose_list .color_choose {
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/color_choose_text.png) center no-repeat;
+    background-size: 138rpx 33rpx;
+}
+
+#settings .bottom_settings .choose_list .color_choose.active {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/color_choose_text_active.png);
+}
+
+#settings .bottom_settings .choose_list .img_choose {
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img_choose_text.png) center no-repeat;
+    background-size: 138rpx 33rpx;
+    left: 375rpx;
+}
+
+#settings .bottom_settings .choose_list .img_choose.active {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img_choose_text_active.png);
+}
+
+#settings .bottom_settings .choose_main {
+    width: 100%;
+    height: 168rpx;
+    position: absolute;
+    top: 78rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main {
+    height: 124rpx;
+    overflow-x: scroll;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul {
+    width: 938rpx;
+    height: 124rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li {
+    width: 74rpx;
+    height: 74rpx;
+    float: left;
+    margin-top: 33rpx;
+    margin-left: 40rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(1) {
+    background-color: #ff4b30;
+    margin-left: 33rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(2) {
+    background-color: #f75c2f;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(3) {
+    background-color: #ffc408;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(4) {
+    background-color: #90b44b;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(5) {
+    background-color: #00aa90;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(6) {
+    background-color: #30a8de;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(7) {
+    background-color: #986db2;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li:nth-child(8) {
+    background-color: #e16b8c;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li.chosen {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/choose_circle.png);
+    background-size: 37rpx 37rpx;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split {
+    width: 100%;
+    height: 114rpx;
+    position: relative;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline {
+    width: 654rpx;
+    height: 70rpx;
+    border: 1rpx solid #000;
+    position: absolute;
+    top: 10rpx;
+    left: 48rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits {
+    width: 624rpx;
+    height: 44rpx;
+    position: absolute;
+    left: 15rpx;
+    top: 13rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits .split {
+    width: 78rpx;
+    height: 44rpx;
+    float: left;
+    -webkit-transition: background .15s linear;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(1) {
+    background: #854438;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(2) {
+    background: #994636;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(3) {
+    background: #c83c36;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(4) {
+    background: #e63118;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(5) {
+    background: #ff4b30;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(6) {
+    background: #ff6851;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(7) {
+    background: #f39382;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c0 .split:nth-child(8) {
+    background: #ffbeb4;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(1) {
+    background: #a35838;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(2) {
+    background: #b25c37;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(3) {
+    background: #d84a20;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(4) {
+    background: #f75c2f;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(5) {
+    background: #ff6224;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(6) {
+    background: #fa7048;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(7) {
+    background: #ff8f5d;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c1 .split:nth-child(8) {
+    background: #ffbd87;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(1) {
+    background: #bc9342;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(2) {
+    background: #dbaa44;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(3) {
+    background: #eebb23;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(4) {
+    background: #f7c142;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(5) {
+    background: #ffc408;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(6) {
+    background: #ffd13f;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(7) {
+    background: #ffe181;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c2 .split:nth-child(8) {
+    background: #fad78b;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(1) {
+    background: #2c6b48;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(2) {
+    background: #526d41;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(3) {
+    background: #667d39;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(4) {
+    background: #829a54;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(5) {
+    background: #90b44b;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(6) {
+    background: #8caf7c;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(7) {
+    background: #86c067;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c3 .split:nth-child(8) {
+    background: #b4caa0;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(1) {
+    background: #1f5f4f;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(2) {
+    background: #1d7865;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(3) {
+    background: #00886c;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(4) {
+    background: #138b78;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(5) {
+    background: #04aa90;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(6) {
+    background: #20ceb3;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(7) {
+    background: #86dacd;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c4 .split:nth-child(8) {
+    background: #99ecdf;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(1) {
+    background: #13376a;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(2) {
+    background: #0d5ca1;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(3) {
+    background: #147598;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(4) {
+    background: #228dae;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(5) {
+    background: #30a8de;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(6) {
+    background: #58b2de;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(7) {
+    background: #7ab9df;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c5 .split:nth-child(8) {
+    background: #a5dee4;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(1) {
+    background: #593b67;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(2) {
+    background: #6d4087;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(3) {
+    background: #753d86;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(4) {
+    background: #7e4f8c;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(5) {
+    background: #986db2;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(6) {
+    background: #8a6bbe;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(7) {
+    background: #8f77b4;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c6 .split:nth-child(8) {
+    background: #9b91c1;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(1) {
+    background: #8f354c;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(2) {
+    background: #b53d5a;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(3) {
+    background: #cb1b45;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(4) {
+    background: #db4d6d;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(5) {
+    background: #e16b8c;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(6) {
+    background: #e77a92;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(7) {
+    background: #f699ab;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .outline .splits.c7 .split:nth-child(8) {
+    background: #f3a7b9;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .ruler {
+    width: 22rpx;
+    height: 88rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/ruler.png) no-repeat;
+    background-size: 22rpx 88rpx;
+    position: absolute;
+    left: 405rpx;
+    top: 2rpx;
+}
+
+#settings .bottom_settings .choose_main .colors_box .colors_split .ruler.ruler_ani {
+    opacity: 1;
+    -webkit-animation: ruler 1.5s ease-in-out 2 alternate;
+}
+
+#settings .bottom_settings .choose_main .choose_img_box {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #ececec;
+    overflow-x: scroll;
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list {
+    width: 3000rpx;
+    height: 100%;
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li {
+    float: left;
+    width: 300rpx;
+    height: 100%;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img1.png) center no-repeat;
+    background-size: 259rpx 157rpx;
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(1) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img1.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(2) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img2.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(3) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img3.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(4) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img4.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(5) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img5.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(6) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img6.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(7) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img7.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(8) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img8.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(9) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img9.png);
+}
+
+#settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(10) {
+    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img10.png);
+}
+
+#settings .bottom_settings .goto_sign {
+    width: 200rpx;
+    height: 100rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/goto_sign.png) 32rpx 18rpx no-repeat;
+    background-size: 128rpx 45rpx;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+#settings .bottom_settings .continue {
+    width: 200rpx;
+    height: 100rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/continue.png) 48rpx 18rpx no-repeat;
+    background-size: 112rpx 44rpx;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#settings .bottom_settings .return {
+    width: 200rpx;
+    height: 100rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/return.png) 48rpx 18rpx no-repeat;
+    background-size: 114rpx 44rpx;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.count_down {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.count_down .count_box {
+    width: 456rpx;
+    height: 456rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -228rpx;
+    left: 147rpx;
+}
+
+.count_down .count_box .circle1 {
+    width: 456rpx;
+    height: 456rpx;
+    border: 1rpx dashed #fff;
+    border-radius: 400rpx;
+    position: absolute;
+    top: 0;
+}
+
+.count_down .count_box .circle2 {
+    width: 382rpx;
+    height: 382rpx;
+    border: 1rpx dashed #fff;
+    border-radius: 400rpx;
+    position: absolute;
+    top: 36rpx;
+    left: 36rpx;
+}
+
+.count_down .count_box .circle3 {
+    width: 310rpx;
+    height: 310rpx;
+    border: 2rpx solid #fff;
+    border-radius: 400rpx;
+    position: absolute;
+    top: 73rpx;
+    left: 73rpx;
+}
+
+.count_down .count_box .count_num1,.count_down .count_box .count_num2,.count_down .count_box .count_num3 {
+    width: 134rpx;
+    height: 225rpx;
+    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/count_num1.png) -318rpx -10rpx no-repeat;
+    background-size: 462rpx 245rpx;
+    position: absolute;
+    top: 115rpx;
+    left: 162rpx;
+    opacity: 0;
+    -webkit-transform: scale(.7);
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition: all linear .3s;
+}
+
+.count_down .count_box .count_num1.num_show,.count_down .count_box .count_num2.num_show,.count_down .count_box .count_num3,.count_down .count_box .count_num3.num_show {
+    opacity: 1;
+}
+
+.count_down .count_box .count_num2 {
+    background-position: -164rpx -10rpx;
+}
+
+.count_down .count_box .count_num1 {
+    background-position: -10rpx -10rpx;
+}
+
+.count_down .count_box .count_num1.num_hide,.count_down .count_box .count_num2.num_hide,.count_down .count_box .count_num3.num_hide {
+    -webkit-transform: scale(1);
+    opacity: 0;
+}
+
+.count_down .count_box .bar {
+    width: 14rpx;
+    height: 155rpx;
+    position: absolute;
+    bottom: 228rpx;
+    left: 221rpx;
+    transform-origin: 50% 100%;
+}
+
+.count_down .count_box .bar.bar_ani {
+    animation: bar 1.5s linear;
+}
+
+.count_down .count_box .bar .bar_line {
+    width: 0;
+    height: 100%;
+    border-left: 1rpx dashed #fff;
+    position: absolute;
+    left: 7rpx;
+    top: 0;
+}
+
+.count_down .count_box .bar .top_circle {
+    width: 14rpx;
+    height: 14rpx;
+    position: absolute;
+    background: #fff;
+    border-radius: 20rpx;
+    top: -7rpx;
+    left: 0;
+}
+
+.count_down .circles_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.count_down .circles_box>div {
+    position: absolute;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 10rpx;
+    border: 1rpx solid #fff;
+}
+
+.result {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 100;
+    overflow-y: scroll;
+}
+
+.result .bottom_show {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.result .firework {
+    position: absolute;
+    top: 0;
+    width: 750rpx;
+    height: 100%;
+    animation: firework 3s linear;
+    background-size: 750rpx 1334rpx;
+}
+
+.result .saved_guide {
+    display: block;
+    width: 750rpx;
+    height: 100rpx;
+    position: fixed;
+    background: #ececec;
+    bottom: 0;
+    font-size: 30rpx;
+    line-height: 100rpx;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+
+ 
+
+ 
+
+/* 
+movable-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100rpx;
+    width: 100rpx;
+    background: #1AAD19;
+    color: #fff;
+  }
+  
+  movable-area {
+    height: 400rpx;
+    width: 400rpx;
+    margin: 50rpx;
+    background-color: #ccc;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  .max {
+    width: 600rpx;
+    height: 600rpx;
+  }
+  
+  .page-section{
+    width: 100%;
+    margin-bottom: 60rpx;
+  }
+  
+  .page-section:last-child{
+    margin-bottom: 0;
+  }
+  
+  .page-section-title{
+    font-size: 28rpx;
+    color: #999999;
+    margin-bottom: 10rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+  }
+   */

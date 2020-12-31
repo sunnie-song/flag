@@ -1,0 +1,17 @@
+<movable-area class="movable" style="height:{{movableHeight}}px;width:100px">
+    <block wx:for="{{renderLists}}" wx:key="id">
+        <movable-view
+            class="movable__view {{item.id === currentId?'zIndex':''}} {{item.id === currentId && !movableDisabled ?'active':''}}"
+            data-id="{{item.id}}" data-item="{{item}}" data-index="{{index}}" x="{{item.x}}" y="{{item.y}}"
+            disabled="{{movableDisabled}}" direction="all" catchlongpress="handleLongPress"
+            catchtouchend="handleTouchEnd" bindtouchmove="handleTouchMove" >
+            <view class="fold_main_item" bindtap="handleChangeText" data-index="{{index}}">
+                <view class="li_index">{{index+1}}.</view>
+                <view class="li_main">
+                    <view class="li_text">{{item.text}}</view>
+                    <view catchtap="deleteFlag" class="li_delete" data-index="{{index}}"></view>
+                </view>
+            </view>
+        </movable-view>
+    </block>
+</movable-area>
