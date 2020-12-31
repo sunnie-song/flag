@@ -19,14 +19,14 @@ var t = require('../../B7C5B970B1CF99CFD1A3D177B8F7F6A0.js'),
 
 Page({
     data: {
-        endDate: '2020/12/31 09:00:00',
+        endDate: '2020/12/31 18:00:00',
         auth: true,
         width: 750,
         height: wx.getSystemInfoSync().windowHeight,
         n: 750 / wx.getSystemInfoSync().windowWidth,
         flagLists: [],
         // {item:'123',x:0,y:0},{item:'234',x:0,y:100}
-        tempFlagLists: [{text:'123',x:0,y:0},{text:'234',x:0,y:100}],
+        tempFlagLists: [],
         isFirstTime: true,
         foldShow: false,
         animationData: {},
@@ -433,7 +433,6 @@ Page({
         var l = '立于' + e + '/' + i + '/' + n + '/ ' + s + ':' + o
         this.data.nowDate = l
         var h = this.data.n
-      
         var r = this.data.width,
             g = this.data.height,
             c = this.data.tempFlagLists.length
@@ -556,13 +555,14 @@ Page({
         !this.data.auth && a.drawImage('./images/end/end_text.png', et, at, it, nt)
     },
     drawText: function (t) {
+        console.log(t)
         a.setFillStyle(t.color)
         a.setFontSize(t.size)
         a.setTextAlign(t.align)
         a.setTextBaseline(t.baseline)
-        a.font = "normal normal 12px 'sans-serif'"
+        // a.font = "normal normal 12px 'sans-serif'"
         // a.font = `normal ${t.bold?'bold':'normal'} ${t.size}px "${'sans-serif'}"`;
-        //  t.bold ? (a.font = 'normal ' + t.size + 'px ' + t.font) : (a.font = 'normal ' + t.size + 'px ' + t.font),
+        t.bold ? (a.font = 'normal ' + t.size + 'px ' + t.font) : (a.font = 'normal ' + t.size + 'px ' + t.font)
         a.fillText(t.text, t.x, t.y)
         a.restore()
     },

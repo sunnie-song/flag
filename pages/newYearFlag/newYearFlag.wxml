@@ -1,11 +1,8 @@
 <view class="common-container">
     <view id="content">
-          
         <view id="main">
-            
             <canvas canvasId="canvas" style="width:{{width}}rpx;height:{{height}}px;position:absolute;left:-750rpx;"></canvas>
             <view id="intro" style="display: {{introShow?'block':'none'}}; opacity: 1;">
-             
                 <view class="intro_step" style="top:{{isIphoneX?'120rpx':''}}"></view>
                 <view class="intro_arrow" style="{{isIphoneX?'bottom:540rpx;animation:arrowX 1s ease infinite':''}}"></view>
                 <view class="intro_go" style="{{isIphoneX?'bottom:400rpx':''}}"></view>
@@ -13,9 +10,7 @@
                 <view bindtap="introGoTap" class="intro_snow"></view>
             </view>
             <view id="select" style="display: {{selectShow?'block':'none'}}; opacity: 1;">
-             
                 <view class="select_main">
-             
                     <view bindtap="openFoldClick" class="s_top {{topTipsShow?'animate':''}}" style="top: 18rpx;">
                         <view class="top_num">{{tempFlagLists.length}}</view>
                         <view class="top_select_text"></view>

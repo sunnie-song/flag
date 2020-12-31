@@ -37,7 +37,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
   "appid": "wx6b45e0063f0f3432",
-  "projectname": "miniprogram-1",
+  "projectname": "flag-app",
   "debugOptions": {
     "hidedInDevtools": []
   },
