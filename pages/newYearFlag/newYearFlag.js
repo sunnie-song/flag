@@ -599,7 +599,6 @@ Page({
                     })
             }
         })
-        this.prepareDrawCtx()
     },
     onReady: function () {},
     onShow: function () {
