@@ -2,6 +2,7 @@
     "disableScroll": true,
     "usingComponents": {
         "i-toast": "../../ui/toast/index",
-        "sort":"/components/sort/sort"
+        "sort":"/components/sort/sort",
+        "painter":"/components/painter/painter"
     }
 }

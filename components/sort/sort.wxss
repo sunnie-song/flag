@@ -60,7 +60,8 @@
   transition: all linear .1s;
   width: 47rpx;
   height: 47rpx;
-  background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/delete.png) center center no-repeat;
+  /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/delete.png */
+  background: url(https://s3.uuu.ovh/2026/05/20/awozpD15.png) center center no-repeat;
   background-size: 19rpx 19rpx;
   position: absolute;
   right: 0;

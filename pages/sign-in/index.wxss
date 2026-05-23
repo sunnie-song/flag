@@ -1,0 +1,25 @@
+page {
+  background: #fefefe;
+}
+.habit-container .habit-list {
+  padding: 20rpx;
+}
+.habit-container .habit-list .habit-item {
+  height: 130rpx;
+  padding: 0 40rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  border: 4rpx solid #ff5500;
+  background: #ff6000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.habit-container .habit-list .habit-item .total-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.habit-container .habit-list .habit-item .total-days .days-text {
+  font-size: 24rpx;
+}

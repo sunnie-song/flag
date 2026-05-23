@@ -1,6 +1,9 @@
+const template = require('./template/index.js')
+
 var t = require('../../B7C5B970B1CF99CFD1A3D177B8F7F6A0.js'),
     e = t.$Toast,
-    a = (t.$Message, wx.createCanvasContext('canvas')),
+    // 修复1：移除模块级别的 wx.createCanvasContext 调用，改为在 onReady 中初始化
+    a = null,
     i = wx.createAnimation({
         duration: 1e3,
         timingFunction: 'ease',
@@ -19,7 +22,7 @@ var t = require('../../B7C5B970B1CF99CFD1A3D177B8F7F6A0.js'),
 
 Page({
     data: {
-        endDate: '2020/12/31 18:00:00',
+        endDate: '2020/12/31 19:00:00',
         auth: true,
         width: 750,
         height: wx.getSystemInfoSync().windowHeight,
@@ -34,7 +37,7 @@ Page({
         topTipsShow: false,
         placeholderShow: true,
         inputFlagValue: '',
-        inputFocus:false,
+        inputFocus: false,
         inputNameValue: '',
         introShow: true,
         selectShow: false,
@@ -45,8 +48,8 @@ Page({
         step3TipsShow: false,
         settingsBgColor: '#ff4b30',
         chooseActive: 'color',
-        imgLists: ['img1.png', 'img2.png', 'img3.png', 'img4.png', 'img5.png', 'img6.png', 'img7.png', 'img8.png', 'img9.png', 'img10.png'],
-        imgListsIndex: 'img3.png',
+        imgLists: ['7UMN1fbk.png', 'kN5DYIKf.png', 'jvctMOF2.png', '3ivOQQJq.png', 'K11rYvtt.png', 'W622aQhA.png', 'Bab0cR1c.png', 'k2LlUfLq.png', 'fsFulQII.png', 'C5mAyxpU.png'],
+        imgListsIndex: '7UMN1fbk.png',
         colorLists: ['#ff4b30', '#f75c2f', '#ffc408', '#90b44b', '#00aa90', '#30a8de', '#986db2', '#e16b8c'],
         colorListsIndex: 0,
         readCheck: false,
@@ -57,9 +60,94 @@ Page({
         circle3Show: true,
         num1Show: false,
         num2Show: false,
-        num3Show: true
+        num3Show: true,
+        painting: {}
     },
+     // 图片生成成功
+     onImgOK(e) {
+        this.setData({
+            resultFlagImg: e.detail.path,
+        })
+    },
+    // 画图（使用 painter 组件生成海报）
+    handlePainter() {
+        const {settingsBgColor} = this.data
+        // 修复2：先校验，再执行画图
+        if (this.data.readCheck && this.data.inputNameValue.trim() == '') {
+            e({
+                content: '请输入姓名！',
+                type: 'warning'
+            })
+            return false
+        }
 
+        // 如果未勾选已阅读，提示动画
+        if (!this.data.readCheck) {
+            this.setData({
+                readAniShow: true
+            })
+            return false
+        }
+
+        // 已勾选，开始倒计时和画图
+        const params = {
+            shareType: 'flag',
+            list: this.data.tempFlagLists,
+            settingsBgColor
+        }
+        template.drawPoster(params).then(res => {
+            this.setData({
+                painting: res
+            })
+        })
+
+        this.setData({
+            countDownShow: true,
+            step3TipsShow: false
+        })
+
+        // 修复3：使用 BackgroundAudioManager 替代已废弃的 wx.playBackgroundAudio
+        // try {
+        //     const bgAudioManager = wx.getBackgroundAudioManager()
+        //     bgAudioManager.title = '倒计时'
+        //     bgAudioManager.src = 'https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/count_down.mp3'
+        // } catch(err) {
+        //     console.warn('背景音频播放失败:', err)
+        // }
+
+        setTimeout(() => {
+            this.setData({
+                num3Show: false,
+                num2Show: true,
+                barAniShow: true
+            })
+            setTimeout(() => {
+                this.setData({
+                    num2Show: false,
+                    num1Show: true
+                })
+                // 使用旧版 canvas 绘制最终图片
+                this.prepareDrawCtx()
+                this.drawImageShow((res) => {
+                    console.log(res.tempFilePath)
+                    this.setData({
+                        resultShow: true,
+                        resultFlagImg: res.tempFilePath
+                    })
+                    // try {
+                    //     const bgAudioManager = wx.getBackgroundAudioManager()
+                    //     bgAudioManager.title = '星星'
+                    //     bgAudioManager.src = 'https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/star.mp3'
+                    // } catch(err) {
+                    //     console.warn('背景音频播放失败:', err)
+                    // }
+                    setTimeout(() => {
+                        this._showActionSheet()
+                    }, 2e3)
+                })
+            }, 1e3)
+        }, 1e3)
+    },
     introGoTap: function () {
         this.setData({
             introShow: false,
@@ -93,15 +181,19 @@ Page({
             }),
             this.setData({
                 starAnimationData: s.export()
-            }),
-            wx.playBackgroundAudio({
-                dataUrl: 'https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/star.mp3'
             })
+        // 修复4：使用 BackgroundAudioManager 替代已废弃的 wx.playBackgroundAudio
+        // try {
+        //     const bgAudioManager = wx.getBackgroundAudioManager()
+        //     bgAudioManager.title = '星星音效'
+        //     bgAudioManager.src = 'https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/star.mp3'
+        // } catch(err) {
+        //     console.warn('播放音效失败:', err)
+        // }
     },
     boxItemChosen: function (t) {
         var e = t.touches[0].clientX,
             a = t.touches[0].clientY - 10
-        // var i = t.currentTarget.dataset.index, n = this.data.flagLists[i], s = n.text;
         var i = t.currentTarget.dataset.index
         let flag = this.data.flagLists[i]
         flag.isChosen = true
@@ -122,37 +214,6 @@ Page({
         console.log(e.detail)
         this.setData({tempFlagLists: e.detail})
     },
-    // deleteFlag: function (t) {
-    //     var e = t.currentTarget.dataset.index,
-    //         a = this.data.tempFlagLists
-    //     a.splice(e, 1),
-    //         this.setData({
-    //             tempFlagLists: a
-    //         }),
-    //         console.log(this.data.tempFlagLists)
-    // },
-    // flagSortChange: function(t) {
-    //     console.log(t);
-    //     var e = t.currentTarget.dataset.index, a = parseFloat(t.currentTarget.dataset.y), i = t.detail.y;
-    //     console.log(i, a);
-    //     var n = this.data.tempFlagLists, s = n[e];
-    //     i > a && (n[e] = n[e + 1], n[e + 1] = s), i < a && (n[e] = n[e - 1], n[e - 1] = s),
-    //     this.setData({
-    //         currentIndex: e,
-    //         tempFlagLists: n
-    //     });
-    // },
-    // flagLongPress: function(t) {
-    //     var e = t.currentTarget.dataset.index;
-    //     this.setData({
-    //         currentIndex: e
-    //     });
-    // },
-    // flagTouchEnd: function() {
-    //     this.setData({
-    //         currentIndex: null
-    //     });
-    // },
     inputFlagFocus: function () {
         this.setData({
             placeholderShow: false
@@ -198,8 +259,8 @@ Page({
             var s = this.data.tempFlagLists
             this.setData({
                 tempFlagLists: s.concat({text}),
-                inputFlagValue:'',
-                placeholderShow:true
+                inputFlagValue: '',
+                placeholderShow: true
             })
         }
     },
@@ -255,51 +316,9 @@ Page({
             step3TipsShow: true
         })
     },
+    // 确认按钮（保留旧版 canvas 绘制逻辑，作为备用）
     confirmTap: function () {
-        var t = this
-        this.data.readCheck && '' == this.data.inputNameValue.trim()
-            ? e({
-                  content: '请输入姓名！',
-                  type: 'warning'
-              })
-            : this.data.readCheck
-            ? (this.setData({
-                  countDownShow: true,
-                  step3TipsShow: false
-              }),
-              wx.playBackgroundAudio({
-                  dataUrl: 'https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/count_down.mp3'
-              }),
-              setTimeout(function () {
-                  t.setData({
-                      num3Show: false,
-                      num2Show: true,
-                      barAniShow: true
-                  }),
-                      setTimeout(function () {
-                          t.setData({
-                              num2Show: false,
-                              num1Show: true
-                          }),
-                              t.prepareDrawCtx(),
-                              t.drawImageShow(function (e) {
-                                  console.log(e.tempFilePath),
-                                      t.setData({
-                                          resultShow: true,
-                                          resultFlagImg: e.tempFilePath
-                                      }),
-                                      wx.playBackgroundAudio({
-                                          dataUrl: 'https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/star.mp3'
-                                      }),
-                                      setTimeout(function () {
-                                          t._showActionSheet()
-                                      }, 2e3)
-                              })
-                      }, 1e3)
-              }, 1e3))
-            : this.setData({
-                  readAniShow: true
-              })
+        this.handlePainter()
     },
     _showActionSheet: function () {
         var t = this
@@ -362,6 +381,7 @@ Page({
             })
     },
     imgChooseTap: function (t) {
+      // console.log('https://s3.uuu.ovh/2026/05/19/'+t.currentTarget.dataset.img)
         this.setData({
             imgListsIndex: t.currentTarget.dataset.img
         })
@@ -374,6 +394,11 @@ Page({
     },
     drawImageShow: function (t) {
         var e = this
+        // 修复5：确保 a (canvasContext) 已初始化
+        if (!a) {
+            console.error('canvasContext 未初始化，请确保 onReady 已执行')
+            return
+        }
         a.draw(true, function () {
             wx.canvasToTempFilePath({
                 canvasId: 'canvas',
@@ -436,7 +461,6 @@ Page({
         var r = this.data.width,
             g = this.data.height,
             c = this.data.tempFlagLists.length
-
 
         c > 3 &&
             ((g += (110 * (c - 3)) / h),
@@ -538,11 +562,6 @@ Page({
             H = 24 / h,
             $ = 24 / h
         a.drawImage('./images/end/flag.png', W, j, H, $)
-        // var E = (r - 517) / 2 / h - 10 / h,
-        //     G = c >= 3 ? (1040 + 110 * (c - 3)) / h : 1040 / h,
-        //     O = 330 / h,
-        //     J = 51 / h
-        // a.drawImage('./images/end/logo.png', E, G, O, J)
         var K = (r - 517) / 2 / h + 370 / h,
             Q = c >= 3 ? (880 + 110 * (c - 3)) / h : 880 / h,
             Z = 150 / h,
@@ -555,13 +574,11 @@ Page({
         !this.data.auth && a.drawImage('./images/end/end_text.png', et, at, it, nt)
     },
     drawText: function (t) {
-        console.log(t)
+        // console.log(t)
         a.setFillStyle(t.color)
         a.setFontSize(t.size)
         a.setTextAlign(t.align)
         a.setTextBaseline(t.baseline)
-        // a.font = "normal normal 12px 'sans-serif'"
-        // a.font = `normal ${t.bold?'bold':'normal'} ${t.size}px "${'sans-serif'}"`;
         t.bold ? (a.font = 'normal ' + t.size + 'px ' + t.font) : (a.font = 'normal ' + t.size + 'px ' + t.font)
         a.fillText(t.text, t.x, t.y)
         a.restore()
@@ -600,7 +617,10 @@ Page({
             }
         })
     },
-    onReady: function () {},
+    // 修复6：在 onReady 中初始化 canvasContext，确保页面渲染完成后才创建
+    onReady: function () {
+        a = wx.createCanvasContext('canvas')
+    },
     onShow: function () {
         var myDate = new Date().getTime()
         var endData = new Date(this.data.endDate).getTime()
@@ -613,15 +633,15 @@ Page({
     },
     onShareAppMessage: function () {
         return {
-            title: '快来立下你的2021新年flag吧！',
+            title: '快来立下你的2027新年flag吧！',
             path: '/pages/newYearFlag/newYearFlag',
             imageUrl: './images/share.png'
         }
     },
-    handleText(e){
+    handleText(e) {
         this.setData({
             inputFlagValue: e.detail,
-            inputFocus:true
+            inputFocus: true
         })
     },
     handleTouchMove(e) {

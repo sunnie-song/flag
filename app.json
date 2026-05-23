@@ -5,10 +5,8 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#333",
-    "navigationBarTitleText": "2021新年flag",
+    "navigationBarTitleText": "flag 2027",
     "navigationBarTextStyle": "white"
   },
-  "navigateToMiniProgramAppIdList": [
-  ],
   "sitemapLocation": "sitemap.json"
 }

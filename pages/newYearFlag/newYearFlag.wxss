@@ -17,7 +17,7 @@
 #intro .intro_snow {
     width: 750rpx;
     height: 1334rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+    /* background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png); */
     background-size: 750rpx 1334rpx;
     animation: snow 1.5s ease 0.2s infinite;
     position: absolute;
@@ -27,7 +27,7 @@
 #intro .intro_step {
     width: 650rpx;
     height: 671rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/bg1.png) no-repeat;
+    background: url(https://s3.uuu.ovh/2026/05/20/EU08zXkg.png) no-repeat;
     background-size: 600rpx 619rpx;
     top: 60rpx;
     right: -20rpx;
@@ -37,7 +37,7 @@
 #intro .intro_arrow {
     width: 24rpx;
     height: 12rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/triangle.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/rLOlmdYq.png);
     background-size: 24rpx 12rpx;
     bottom: 440rpx;
     right: 50%;
@@ -51,7 +51,7 @@
     height: 90rpx;
     border: 2rpx solid #FF4B30;
     border-left-width: 10rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/go.png) no-repeat center;
+    background: url(https://s3.uuu.ovh/2026/05/20/RTCu5Qyc.png) no-repeat center;
     background-size: 148rpx 39rpx;
     bottom: 300rpx;
     right: 50%;
@@ -63,7 +63,7 @@
 #intro .intro_bottom {
     width: 750rpx;
     height: 400rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/intro/bottom_bg.jpg);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/HaR0B0iw.jpg);
     background-size: 750rpx 400rpx;
     bottom: -40rpx;
     position: absolute;
@@ -84,7 +84,7 @@
 #select .intro_snow {
     width: 750rpx;
     height: 1334rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+    /* background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png); */
     background-size: 750rpx 1334rpx;
     animation: snow 1.5s ease 0.2s infinite;
     position: absolute;
@@ -111,7 +111,8 @@
 #select .fold_box .close_fold {
     width: 153rpx;
     height: 49rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/close_fold.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/close_fold.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN71qCyH0ceTMRK2vpO2uDIzGhsz-wAACzikAAkb1WVSRiZXhyoayYjsE.png);
     background-position: bottom;
     background-size: 153rpx 49rpx;
     position: absolute;
@@ -184,7 +185,7 @@
     transition: all linear .1s;
     width: 47rpx;
     height: 47rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/delete.png) center center no-repeat;
+    background: url(https://s3.uuu.ovh/2026/05/20/awozpD15.png) center center no-repeat;
     background-size: 19rpx 19rpx;
     position: absolute;
     right: 0;
@@ -239,7 +240,8 @@
 #select .select_main .s_top {
     width: 642rpx;
     height: 84rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/top_bg2.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/top_bg2.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN7hqCyGRwkTf2NaxWk4jpuBf-r_BOQACxykAAkb1WVRsydiIzvE4eDsE.png);
     background-size: 642rpx 84rpx;
     position: absolute;
     top: 139rpx;
@@ -264,7 +266,8 @@
     width: 91rpx;
     height: 28rpx;
     position: absolute;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/top_select_text.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/top_select_text.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN7VqCyFRw065hKtaGbY-qors4myTgwACxCkAAkb1WVRQh5QXQbznbTsE.png);
     background-size: 91rpx 28rpx;
     top: 52rpx;
     left: 2rpx;
@@ -280,7 +283,8 @@
 #select .select_main .s_top .s_top_tips .s_top_tips_line {
     width: 22rpx;
     height: 38rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/tips_line.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/tips_line.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN7RqCyEvxgGM7q1xCnR_kBl43nR6AAPDKQACRvVZVFfhpGf5P9RpOwQ.png);
     background-size: 22rpx 38rpx;
     position: absolute;
     top: 0;
@@ -289,7 +293,8 @@
 #select .select_main .s_top .s_top_tips .s_top_tips_text {
     width: 260rpx;
     height: 32rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/tips_text.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/tips_text.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN7NqCyDk_dCVCvf3Z53KJJEKw4R-8AACwikAAkb1WVSZTM1RTKm_PTsE.png);
     background-size: 260rpx 32rpx;
     position: absolute;
     top: 18rpx;
@@ -330,20 +335,22 @@
     color: #000;
     width: 32rpx;
     height: 36rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/unchosen.png) right bottom no-repeat;
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/unchosen.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN7JqCyCn9mjx8J-akWJy1mZ1V9CTNQACwSkAAkb1WVQpc94PpvaA2DsE.png) right bottom no-repeat;
     background-size: 20rpx 16rpx;
 }
 
 #select .select_main .box .box-item.chosen .num {
     font-size: 0;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/chosen.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/chosen.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN65qCyBWSQardcMxmjH8HAzAUfvhvQACvSkAAkb1WVTGFO9iOm4EDTsE.png);
     background-size: 32rpx 36rpx;
 }
 
 .star {
     width: 75rpx;
     height: 79rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/star.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/mFi5sxMc.png);
     background-size: 75rpx 79rpx;
     position: absolute;
     opacity: 0;
@@ -402,13 +409,15 @@
     color: #000;
     width: 32rpx;
     height: 36rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/unchosen.png) right bottom no-repeat;
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/unchosen.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN7JqCyCn9mjx8J-akWJy1mZ1V9CTNQACwSkAAkb1WVQpc94PpvaA2DsE.png) right bottom no-repeat;
     background-size: 20rpx 16rpx;
 }
 
 #select .select_main .box .box-itemX.chosen .num {
     font-size: 0;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/chosen.png);
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/chosen.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN65qCyBWSQardcMxmjH8HAzAUfvhvQACvSkAAkb1WVTGFO9iOm4EDTsE.png);
     background-size: 32rpx 36rpx;
 }
 
@@ -455,14 +464,14 @@
     left: 10rpx;
     width: 30rpx;
     height: 35rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/hand.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/I1XGGlRK.png);
     background-size: 30rpx 35rpx;
 }
 
 #select .select_main .hand_box .hand_text {
     width: 156rpx;
     height: 32rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/hand_text1.png);
+    background-image: url(https://s41.ax1x.com/2026/05/18/pexsQ10.png);
     background-size: 156rpx 32rpx;
     position: absolute;
     top: 16rpx;
@@ -512,7 +521,7 @@
 #select .select_main .change .change_text {
     width: 135rpx;
     height: 31rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/change_text1.png) no-repeat;
+    background: url(https://s3.uuu.ovh/2026/05/20/YPCdPnRc.png) no-repeat;
     background-size: 135rpx 31rpx;
     position: absolute;
     top: 52rpx;
@@ -539,7 +548,7 @@
 #select .select_main .input_box .placeholder {
     width: 642rpx;
     height: 75rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/placeholder3.png);
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN6RqCx4KXINSsu2pgIjCml-r37_s8QACrykAAkb1WVQGTyLCCJ65VzsE.png);
     background-size: 642rpx 75rpx;
 }
 
@@ -579,7 +588,7 @@
 #select .select_main .input_box .ok {
     width: 75rpx;
     height: 71rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/ok1.png) center center no-repeat;
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN6pqCx-ficE7GVKrBWvjZLs3i5aaTgACuCkAAkb1WVRZwHYOfW1WUDsE.png) center center no-repeat;
     background-size: 49rpx 27rpx;
     position: absolute;
     right: 0;
@@ -589,7 +598,9 @@
 #select .select_main .next {
     width: 145rpx;
     height: 48rpx;
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/select/next1.png);
+      /* pages/newYearFlag/images/select/next1.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN6tqCx_OvR0buR_iGgisZWEMGyMebAACuSkAAkb1WVTJoERKuHhs_TsE.png);
+  
     background-size: 145rpx 48rpx;
     position: absolute;
     bottom: 82rpx;
@@ -750,226 +761,226 @@
 
 @-webkit-keyframes snow {
     0% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png); */
     }
 
     5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/2.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/2.png); */
     }
 
     10% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/3.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/3.png); */
     }
 
     15% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/4.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/4.png); */
     }
 
     20% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/5.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/5.png); */
     }
 
     25% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/6.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/6.png); */
     }
 
     30% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/7.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/7.png); */
     }
 
     35% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/8.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/8.png); */
     }
 
     40% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/9.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/9.png); */
     }
 
     45% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/10.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/10.png); */
     }
 
     50% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/11.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/11.png); */
     }
 
     55% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/12.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/12.png); */
     }
 
     60% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/13.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/13.png); */
     }
 
     65% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/14.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/14.png); */
     }
 
     70% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/15.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/15.png); */
     }
 
     75% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/16.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/16.png); */
     }
 
     80% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/17.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/17.png); */
     }
 
     85% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/18.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/18.png); */
     }
 
     90% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/19.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/19.png); */
     }
 
     95% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/20.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/20.png); */
     }
 }
 
 @keyframes snow {
     0% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/1.png); */
     }
 
     5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/2.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/2.png); */
     }
 
     10% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/3.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/3.png); */
     }
 
     15% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/4.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/4.png); */
     }
 
     20% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/5.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/5.png); */
     }
 
     25% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/6.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/6.png); */
     }
 
     30% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/7.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/7.png); */
     }
 
     35% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/8.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/8.png); */
     }
 
     40% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/9.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/9.png); */
     }
 
     45% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/10.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/10.png); */
     }
 
     50% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/11.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/11.png); */
     }
 
     55% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/12.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/12.png); */
     }
 
     60% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/13.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/13.png); */
     }
 
     65% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/14.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/14.png); */
     }
 
     70% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/15.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/15.png); */
     }
 
     75% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/16.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/16.png); */
     }
 
     80% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/17.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/17.png); */
     }
 
     85% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/18.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/18.png); */
     }
 
     90% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/19.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/19.png); */
     }
 
     95% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/20.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/snow/20.png); */
     }
 }
 
 @-webkit-keyframes firework {
     0% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/1.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/1.png); */
     }
 
     2.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/2.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/2.png); */
     }
 
     5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/3.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/3.png); */
     }
 
     5.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/4.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/4.png); */
     }
 
     7.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/5.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/5.png); */
     }
 
     10% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/6.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/6.png); */
     }
 
     12.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/7.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/7.png); */
     }
 
     15% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/8.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/8.png); */
     }
 
     17.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/9.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/9.png); */
     }
 
     20% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/10.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/10.png); */
     }
 
     22.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/11.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/11.png); */
     }
 
     25% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/12.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/12.png); */
     }
 
     27.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/13.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/13.png); */
     }
 
     30% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/14.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/14.png); */
     }
 
-    32.5% {
+    /* 32.5% {
         background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/15.png);
     }
 
@@ -1229,26 +1240,26 @@
 
     87.5% {
         background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
-    }
+    } */
 
     90% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png); */
     }
 
     92.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/35.png); */
     }
 
     95% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/36.png); */
     }
 
     97.5% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/37.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/37.png); */
     }
 
     100% {
-        background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/38.png);
+        /* background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/fireworks/38.png); */
     }
 }
 
@@ -1275,7 +1286,8 @@
 #settings .settings_main .top_title {
     width: 422rpx;
     height: 182rpx;
-    background-image: url(https://www.sunniejs.cn/static/flag/top_title1.png);
+    /* https://www.sunniejs.cn/static/flag/top_title1.png */
+     background-image: url(https://s3.uuu.ovh/2026/05/20/duacapct.png);  
     background-size: 422rpx 182rpx;
     position: absolute;
     top: 80rpx;
@@ -1292,7 +1304,8 @@
 #settings .settings_main .img_box .img_bg {
     width: 100%;
     height: 100%;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img_bg.png) center center no-repeat;
+    /* https://www.sunniejs.cn/static/flag/img_bg.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOAABagsnpO50A-86_ZgDxsVZYqraAgcAAiQqAAJG9VlUoo8TtdDDt2g7BA.png) center center no-repeat;
     background-size: 242rpx 164rpx;
     position: absolute;
     top: 0;
@@ -1301,7 +1314,8 @@
 #settings .settings_main .img_box .img {
     width: 100%;
     height: 100%;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img1.png) center center no-repeat;
+    /* https://www.sunniejs.cn/static/flag/img1.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN_5qCyeBmW1VMyvb1ayGMyZ9SEG0owACIioAAkb1WVTJyQcfzYPNZDsE.png) center center no-repeat;
     background-size: 242rpx 164rpx;
     position: absolute;
     top: 0;
@@ -1310,7 +1324,9 @@
 #settings .settings_main .text_box {
     width: 528rpx;
     height: 507rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/end/top_line.png) 18rpx 0 no-repeat,url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/end/bottom_line.png) 27rpx bottom no-repeat;
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/end/top_line.png */
+    /* https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/end/bottom_line.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN8hqCyMM4Txbd4k4wuMTUrRh1JBq5wAC2ykAAkb1WVTxa0fkB_KdBzsE.png) 18rpx 0 no-repeat,url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN8pqCyMpIXSfdZckXj9zYCFjlnZpUgAC3ikAAkb1WVQtGZBTkFRd1DsE.png) 27rpx bottom no-repeat;
     background-size: 517rpx 9rpx;
     position: absolute;
     top: 470rpx;
@@ -1357,7 +1373,8 @@
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number {
     width: 18rpx;
     height: 27rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-0.png) center bottom no-repeat;
+    /* https://www.sunniejs.cn/static/flag/1-0.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN_xqCydWHQofv87EjZvVnzjjQkVJYgACHyoAAkb1WVS3XpWnxNmvdDsE.png) center bottom no-repeat;
     background-size: 11rpx 24rpx;
     position: absolute;
     top: 0;
@@ -1365,47 +1382,54 @@
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l0 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-0.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/nh9fy4Ve.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l1 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-1.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/hGv5PQfV.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l2 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-2.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/VZDO9I6c.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l3 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-3.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/20/4nvVP8Jp.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l4 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-4.png);
+  /* https://www.sunniejs.cn/static/flag/1-4.png */
+    background-image: url(https://s3.uuu.ovh/2026/05/20/pzGJicvi.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l5 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-5.png);
+  /* https://www.sunniejs.cn/static/flag/1-5.png */
+    background-image: url(https://s3.uuu.ovh/2026/05/20/zHUn6EBN.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l6 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-6.png);
+  /* https://www.sunniejs.cn/static/flag/1-6.png */
+    background-image: url(https://s3.uuu.ovh/2026/05/20/4UbOQP0s.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l7 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-7.png);
+  /* https://www.sunniejs.cn/static/flag/1-7.png */
+    background-image: url(https://s3.uuu.ovh/2026/05/20/FSetBGpX.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l8 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-8.png);
+  /* https://www.sunniejs.cn/static/flag/1-8.png */
+    background-image: url(https://s3.uuu.ovh/2026/05/20/yxtYvuVo.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number .number.l9 {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/1-9.png);
+  /* https://www.sunniejs.cn/static/flag/1-9.png */
+    background-image: url(https://s3.uuu.ovh/2026/05/20/ZUbjgIb0.png);
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.single .number_line {
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/single_bg.png) no-repeat;
+  /* https://www.sunniejs.cn/static/flag/single_bg.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN-9qCyZhyX3z90LmwtC13wx7krv7PQACDioAAkb1WVRsA74h7EfZQjsE.png) no-repeat;
     background-size: 43rpx 19rpx;
     width: 43rpx;
     height: 19rpx;
@@ -1415,7 +1439,8 @@
 }
 
 #settings .settings_main .text_box .text_scroll_box_ul .text_scroll_box_li .li_number.ten .number_line {
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/ten_bg.png) no-repeat;
+  /* https://www.sunniejs.cn/static/flag/ten_bg.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN_FqCyaKN2mtRumNrxSZY1tLlr_9dwACEyoAAkb1WVQ8yRgoPY2R1DsE.png) no-repeat;
     background-size: 27rpx 19rpx;
     width: 27rpx;
     height: 19rpx;
@@ -1448,7 +1473,8 @@
 }
 
 #settings .step2 {
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/bg1.png) no-repeat;
+  /* https://www.sunniejs.cn/static/flag/bg1.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN9NqCyPqLXpD38A3TnTL4lm29ZikbAAC5ykAAkb1WVQlAAEfG8cYk-w7BA.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -1468,14 +1494,16 @@
 #settings .step3 {
     opacity: 0;
     overflow: hidden;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/bg2.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/bg2.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN9VqCyRAgZ3ZZ4Xtl_BxouX50nN0wQAC6ikAAkb1WVSjTodk7yBzODsE.png) no-repeat;
     background-size: 100% 100%;
 }
 
 #settings .step3 .step3_text {
     width: 526rpx;
     height: 587rpx;
-    background: url(https://www.sunniejs.cn/static/flag/step3_text1.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/step3_text1.png/ */
+    background: url(https://s3.uuu.ovh/2026/05/20/2kW23c8w.png) no-repeat;
     background-size: 526rpx 587rpx;
     position: absolute;
     top: 82rpx;
@@ -1490,7 +1518,8 @@
 #settings .step3 .read .read_circle {
     width: 29rpx;
     height: 29rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/read_unclick.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/read_unclick.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN9pqCyS-8EAqfSufauEAAS7EhjeYxAMAAvMpAAJG9VlUAsl1zGRhcUg7BA.png) no-repeat;
     background-size: 29rpx 29rpx;
     position: absolute;
     left: 36rpx;
@@ -1507,7 +1536,8 @@
 }
 
 #settings .step3 .read.check .read_circle {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/read_click.png);
+  /* https://www.sunniejs.cn/static/flag/read_click.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN95qCyT2TsMuQEDPFhdgwkonels4xAAC9ykAAkb1WVRy8acfBTQcbjsE.png);
 }
 
 #settings .step3 .read.read_ani {
@@ -1527,7 +1557,8 @@
     top: 0;
     width: 360rpx;
     height: 75rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/name_placeholder1.png) 28rpx center no-repeat;
+    /* https://www.sunniejs.cn/static/flag/name_placeholder1.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN-NqCyU0Gb7ZNoZQUxUtURyK26vNzAAC_CkAAkb1WVQWrDlGK1uaOTsE.png) 28rpx center no-repeat;
     background-size: 313rpx 28rpx;
     z-index: -1;
 }
@@ -1564,7 +1595,8 @@
 #settings .step3 .confirm {
     width: 103rpx;
     height: 48rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/confirm1.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/confirm1.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN-RqCyVhh-XSmB5pFYsTO7f9MagQ1gAC_SkAAkb1WVQLju-7NjXm4DsE.png) no-repeat;
     background-size: 103rpx 48rpx;
     position: absolute;
     bottom: 68rpx;
@@ -1581,14 +1613,16 @@
 #settings .top_tips {
     width: 430rpx;
     height: 46rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/top_tips.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/top_tips.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOARqCygxBsfeHHiq2tdMijKJj650rAACKyoAAkb1WVSsj1K2OopvEjsE.png) no-repeat;
     background-size: 430rpx 46rpx;
 }
 
 #settings .step3_tips {
     width: 370rpx;
     height: 43rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/step3_tips1.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/step3_tips1.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN-tqCyWv5lU6e798AAFgStyzNkaBF5YAAgUqAAJG9VlUESqPQUurAAFDOwQ.png) no-repeat;
     background-size: 370rpx 43rpx;
 }
 
@@ -1623,22 +1657,26 @@
 }
 
 #settings .bottom_settings .choose_list .color_choose {
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/color_choose_text.png) center no-repeat;
+  /* https://www.sunniejs.cn/static/flag/color_choose_text.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUN-1qCyXmZa2MvbzdwYJPql-lxKIy_wACByoAAkb1WVSFH_IiuLN6rTsE.png) center no-repeat;
     background-size: 138rpx 33rpx;
 }
 
 #settings .bottom_settings .choose_list .color_choose.active {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/color_choose_text_active.png);
+  /* https://www.sunniejs.cn/static/flag/color_choose_text_active.png  */
+  background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOAZqCyhZ5x48H3SR8h8dMoHQ44EOhwACLSoAAkb1WVTDA2_vwg_yJDsE.png);
 }
 
 #settings .bottom_settings .choose_list .img_choose {
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img_choose_text.png) center no-repeat;
+  /* https://www.sunniejs.cn/static/flag/img_choose_text.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOAhqCyiQqrxSmcswgEm02HqKKGdRgQACMCoAAkb1WVRZs1pZKuipRTsE.png) center no-repeat;
     background-size: 138rpx 33rpx;
     left: 375rpx;
 }
 
 #settings .bottom_settings .choose_list .img_choose.active {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img_choose_text_active.png);
+  /* https://www.sunniejs.cn/static/flag/img_choose_text_active.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOApqCyi7iCcTYcmvKpAFZuq2RI4uegACMyoAAkb1WVT2avQx5TmByTsE.png);
 }
 
 #settings .bottom_settings .choose_main {
@@ -1707,7 +1745,8 @@
 }
 
 #settings .bottom_settings .choose_main .colors_box .colors_main .colors_main_ul .colors_main_li.chosen {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/choose_circle.png);
+  /* https://www.sunniejs.cn/static/flag/choose_circle.png */
+    background-image: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOA1qCyjmRCkW9rfQ4PwPzQSArn5EDwACNyoAAkb1WVRsjSy5pwg5PjsE.png);
     background-size: 37rpx 37rpx;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2002,7 +2041,8 @@
 #settings .bottom_settings .choose_main .colors_box .colors_split .ruler {
     width: 22rpx;
     height: 88rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/ruler.png) no-repeat;
+    /* https://www.sunniejs.cn/static/flag/ruler.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUOA9qCykfBuVatau52XEMUf3nnRZaegACOSoAAkb1WVTxzWu4kgABPJU7BA.png) no-repeat;
     background-size: 22rpx 88rpx;
     position: absolute;
     left: 405rpx;
@@ -2033,54 +2073,56 @@
     float: left;
     width: 300rpx;
     height: 100%;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img1.png) center no-repeat;
+    /* https://www.sunniejs.cn/static/flag/img1.png */
+    background: url(https://s3.uuu.ovh/2026/05/19/7UMN1fbk.png) center no-repeat;
     background-size: 259rpx 157rpx;
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(1) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img1.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/7UMN1fbk.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(2) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img2.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/kN5DYIKf.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(3) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img3.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/jvctMOF2.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(4) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img4.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/3ivOQQJq.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(5) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img5.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/K11rYvtt.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(6) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img6.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/W622aQhA.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(7) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img7.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/Bab0cR1c.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(8) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img8.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/k2LlUfLq.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(9) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img9.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/fsFulQII.png);
 }
 
 #settings .bottom_settings .choose_main .choose_img_box .img_list_li:nth-child(10) {
-    background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/img10.png);
+    background-image: url(https://s3.uuu.ovh/2026/05/19/C5mAyxpU.png);
 }
 
 #settings .bottom_settings .goto_sign {
     width: 200rpx;
     height: 100rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/goto_sign.png) 32rpx 18rpx no-repeat;
+    /* https://www.sunniejs.cn/static/flag/goto_sign.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEURDNqDEnm-3DB6QABo-ywovd7dhkzfFUAAjUpAAI36GBUwF4v298ajgw7BA.png) 32rpx 18rpx no-repeat;
     background-size: 128rpx 45rpx;
     position: absolute;
     bottom: 0;
@@ -2091,7 +2133,8 @@
 #settings .bottom_settings .continue {
     width: 200rpx;
     height: 100rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/continue.png) 48rpx 18rpx no-repeat;
+    /* https://www.sunniejs.cn/static/flag/continue.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEURDVqDEohou3U2mf3XELdwwn8w2eMEwACNykAAjfoYFQq8akZFr6c7TsE.png) 48rpx 18rpx no-repeat;
     background-size: 112rpx 44rpx;
     position: absolute;
     bottom: 0;
@@ -2101,7 +2144,8 @@
 #settings .bottom_settings .return {
     width: 200rpx;
     height: 100rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/return.png) 48rpx 18rpx no-repeat;
+    /* https://www.sunniejs.cn/static/flag/return.png */
+    background: url(https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEURDhqDEpcSAnWiZuPuCL2wuRRH8_LTAACOikAAjfoYFQfvxA9Kacs-TsE.png) 48rpx 18rpx no-repeat;
     background-size: 114rpx 44rpx;
     position: absolute;
     bottom: 0;
@@ -2155,7 +2199,8 @@
 .count_down .count_box .count_num1,.count_down .count_box .count_num2,.count_down .count_box .count_num3 {
     width: 134rpx;
     height: 225rpx;
-    background: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/count_num1.png) -318rpx -10rpx no-repeat;
+    /* https://www.sunniejs.cn/static/flag/count_num1.png */
+    background: url(https://s3.uuu.ovh/2026/05/19/cGZ5jwp1.png) -318rpx -10rpx no-repeat;
     background-size: 462rpx 245rpx;
     position: absolute;
     top: 115rpx;

@@ -94,7 +94,7 @@
                         </view>
                         <view bindtap="readCheckTap" class="read {{readCheck?'check':''}} {{readAniShow?'read_ani':''}}">
                             <view class="read_circle"></view>
-                            <view class="read_text">我已经认真阅读以上意见，请2021放心，新的一年我会继续加油！</view>
+                            <view class="read_text">我已经认真阅读以上意见，请2026放心，新的一年我会继续加油！</view>
                         </view>
                         <view class="name_box">
                             <!-- <view class="name_placeholder" wx:if="{{placeholderShow}}">
@@ -109,7 +109,7 @@
                         <view class="top_title"></view>
                         <view class="img_box">
                             <view class="img_bg"></view>
-                            <view class="img" style="background-image: url(https://6f6e-online-e879a3-1258444488.tcb.qcloud.la/newYearFlag/settings/{{imgListsIndex}});"></view>
+                            <view class="img" style="background-image: url(https://s3.uuu.ovh/2026/05/19/{{imgListsIndex}});"></view>
                         </view>
                         <view class="text_box">
                             <view class="text_scroll_box">

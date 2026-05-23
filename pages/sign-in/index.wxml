@@ -1,0 +1,26 @@
+<view class="habit-container">
+    <view class="habit-list">
+        <drag-sort list="{{tempFlagLists}}" draggable=".item" bind:text="handleText" bind:change="handleReset">
+            <view class="habit-item">
+                <view class="">
+                    <view class="habit-icon"></view>
+                    <view class="habit-title">吃苹果</view>
+                </view>
+                <view class="total-days">
+                    <view class="">8</view>
+                    <view class="days-text">坚持天数</view>
+                </view>
+            </view>
+            <view class="habit-item">
+                <view class="">
+                    <view class="habit-icon"></view>
+                    <view class="habit-title">吃苹果</view>
+                </view>
+                <view class="total-days">
+                    <view class="">8</view>
+                    <view class="days-text">坚持天数</view>
+                </view>
+            </view>
+        </drag-sort>
+    </view>
+</view>
